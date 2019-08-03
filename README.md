@@ -1,4 +1,4 @@
-# ipfsBundle
+# ipfs-bundle-t
 custom ipfs bundle for browser
 
 ## Usage:
