@@ -139,4 +139,4 @@ const IpfsBundle = () => new IPFS({
 	},
 });
 
-export default IpfsBundle
+module.exports = IpfsBundle
