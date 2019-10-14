@@ -1,6 +1,6 @@
 {
   "name": "@tabcat/ipfs-bundle-t",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "custom browser bundle for ipfs node",
   "main": "src/index.js",
   "scripts": {},
