@@ -78,15 +78,15 @@ const libp2pBundle = (opts) => {
           active: true
         }
       },
-      dht: {
-        enabled: true,
-        kBucketSize: 20,
-        randomWalk: {
-          enabled: true,
-          interval: 10e3, // This is set low intentionally, so more peers are discovered quickly. Higher intervals are recommended
-          timeout: 2e3 // End the query quickly since we're running so frequently
-        }
-      },
+      // dht: {
+      //   enabled: true,
+      //   kBucketSize: 20,
+      //   randomWalk: {
+      //     enabled: true,
+      //     interval: 10e3, // This is set low intentionally, so more peers are discovered quickly. Higher intervals are recommended
+      //     timeout: 2e3 // End the query quickly since we're running so frequently
+      //   }
+      // },
       EXPERIMENTAL: {
         pubsub: true
       }
@@ -131,6 +131,6 @@ const ipfsOptions = {
   }
 }
 
-const IpfsBundle = () => new IPFS(ipfsOptions)
+const IpfsBundle = (options) => new IPFS({ ...ipfsOptions, ...options })
 
 module.exports = IpfsBundle
