@@ -16,7 +16,7 @@
   "author": "andersb@tuta.io",
   "license": "MIT",
   "dependencies": {
-    "ipfs": "^0.36.4",
+    "ipfs": "github:qalqi/js-ipfs#reactnativebranch",
     "libp2p": "^0.25.4"
   }
 }
